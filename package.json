@@ -1,0 +1,16 @@
+{
+  "name": "criticism-trainer-app",
+  "version": "1.0.0",
+  "description": "F5GAME.RU - Интерактивный тренажер 'Что вместо критики?'",
+  "main": "index.html",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "keywords": [
+    "training",
+    "communication",
+    "criticism"
+  ],
+  "author": "F5GAME.RU",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/criticism_app"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/criticism_app/*"
+  to = "/index.html"
+  status = 200
