@@ -1814,6 +1814,13 @@
                 messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
             }, [messages, isTyping, isAnalyzing]);
 
+            // Скролл наверх при входе в chat или feedback
+            useEffect(() => {
+                if (stage === 'chat' || stage === 'feedback') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            }, [stage]);
+
             const selectMode = (selectedMode) => {
                 setMode(selectedMode);
                 setStage('difficulty');
@@ -2500,7 +2507,7 @@ ${selectedTechnique}
                                 </>
                             )}
                                             <div className="masterclasses-section" style={{marginTop: '30px'}}>
-            <h3>Мастер-классы Ольги Грищенко</h3>
+            <h3>Мастер-классы F5GAME.RU</h3>
             <div className="masterclasses-grid">
                 <a href="https://f5game.ru/genius?utm_source=al_assistant" target="_blank" rel="noopener noreferrer" className="masterclass-card">
                     <div className="masterclass-image">
